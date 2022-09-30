@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+body {
+    background-color: rgb(136, 149, 194);
+    margin: 0;
+}
+
+.mainheader {
+    background-color: rgb(100, 46, 46);
+    color: white;
+}
+
+.pagetitle {
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.todoaddform {
+    padding: 1rem;
+    display: flex;
+}
+
+.todoaddform__description,
+.todoaddform__submit {
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    width: 100%;
+    background-color: white;
+
+    padding: 0.5rem;
+}
+.todoaddform__submit {
+    flex: 1;
+}
+
+.todolist {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.todolist__item {
+    padding: 0.5rem;
+}
+
+.todoitem {
+    display: flex;
+}
+.todoitem--completed .todoitem__description {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todoitem__description,
+.todoitem__remove {
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    width: 100%;
+    background-color: white;
+
+    padding: 0.5rem;
+}
+
+.todoitem__remove {
+    flex: 1;
+    font-size: 0.8em;
+}
+
+.mainfooter {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .todolist {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .todolist__item {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .todolist__item {
+        width: 45.5%;
+    }
+}
